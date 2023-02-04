@@ -1,7 +1,8 @@
 <script>
 	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import EyeDropper from "../lib/Components/EyeDropper/index.svelte"
+	import FileUploader from "../lib/Components/ImageUploader/index.svelte"
 </script>
 
 <svelte:head>
@@ -17,8 +18,13 @@
 			</picture>
 		</span>
 	</h1>
+<h1 class="text-3xl font-bold underline">
+  Hello world!
+</h1>
+	<!-- <Counter /> -->
+	<EyeDropper/>
+	<FileUploader/>
 
-	<Counter />
 </section>
 
 <style>
