@@ -1,8 +1,8 @@
 <script>
-	import Counter from './Counter.svelte';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import EyeDropper from "../lib/Components/EyeDropper/index.svelte"
 	import FileUploader from "../lib/Components/ImageUploader/index.svelte"
+	import Button from "../lib/Components/atoms/button/MainButton.svelte"
 </script>
 
 <svelte:head>
@@ -11,17 +11,10 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-	</h1>
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
-	<!-- <Counter /> -->
+	
+
+	<Button label="Test" primary backgroundColor/>
+
 	<EyeDropper/>
 	<FileUploader/>
 
